@@ -1,3 +1,6 @@
+#ifndef __DEFER_RELEASE_H__
+#define __DEFER_RELEASE_H__
+
 // Compile with option -Wno-cast-function-type
 // From Anton Zhiyanov (https://antonz.org/defer-in-c/)
 //=================================================================
@@ -47,3 +50,5 @@ _defer_cleanup_by_ref (struct _defer_ctx *ctx) {
   vla = realloc (vla, 20 * sizeof (*vla)); // Reallocation.
 */
 //=================================================================
+
+#endif
